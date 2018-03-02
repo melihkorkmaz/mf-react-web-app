@@ -1,0 +1,63 @@
+@import 'base';
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700|Poppins:300,400,600,700');
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html
+  box-sizing: border-box
+
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  font-size: 14px
+
+*, *:before, *:after 
+  box-sizing: inherit
+
+.no-padding
+  padding: 0px
+
+.form-control-smx, .input-group-smx>.form-control, .input-group-smx>.input-group-addon, .input-group-smx>.input-group-btn>.btn
+  padding: 0px
+  font-size: 11px
+  height: 26px
+
+.form-group-sm 
+  .form-control
+    height: 30px
+    padding: 5px 10px
+    font-size: 12px
+    line-height: 1.5 !important
+    border-radius: 3px
+
+.form-group-sm 
+  select.form-control
+    height: 30px !important
+    line-height: 30px !important
+
+.truncate
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.form-horizontal 
+  .control-label
+    padding-top: 7px
+    margin-bottom: 0
+    text-align: right
+
+.auto-height
+  height: auto !important;
+
+.card-header
+    padding: 10px 15px
+    border-bottom: 1px solid transparent
+    border-top-left-radius: 3px
+    border-top-right-radius: 3px
+    font-size : 14px
+
+// .auth0-lock-close-button
+//   display: none

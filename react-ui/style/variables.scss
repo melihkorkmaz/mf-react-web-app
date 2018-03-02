@@ -1,0 +1,20 @@
+
+
+
+$red-theme: (
+        primary-color: #B73A2C,
+        primary-color-invert: #FDFDFF,
+        secondary-color: #272D2D,
+        secondary-color-invert: #FDFDFF,
+        success-color: #27ae60,
+        success-color-invert: #FDFDFF,
+        white-color: #FDFDFF,
+        default-color: #FFFFFF,
+        default-color-invert: #272D2D,
+        border-color: rgba(0,0,0,.125)
+);
+
+
+$themes : (
+    red-theme : $red-theme
+)

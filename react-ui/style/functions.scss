@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+@function default-color($theme){
+    @return map-get(map-get($themes, $theme), 'default-color')
+};
+
+@function default-color-invert($theme){
+    @return map-get(map-get($themes, $theme), 'default-color-invert')
+};
+
+@function primary-color($theme){
+    @return map-get(map-get($themes, $theme), 'primary-color')
+};
+
+@function primary-color-invert($theme){
+    @return map-get(map-get($themes, $theme), 'primary-color-invert')
+};
+
+@function success-color($theme){
+    @return map-get(map-get($themes, $theme), 'success-color')
+};
+
+@function success-color-invert($theme){
+    @return map-get(map-get($themes, $theme), 'success-color-invert')
+};
+
+@function border-color($theme){
+    @return map-get(map-get($themes, $theme), 'border-color')
+}

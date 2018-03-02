@@ -1,0 +1,106 @@
+main .page-banner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 350px;
+    min-height: 350px;
+    position: relative;
+    text-align: center;
+}
+main .page-banner .banner-content {
+    display: inline-block;
+    padding: 124px 0;
+}
+main .page-banner .banner-content h3 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.section-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+main section .section-left-content {
+    padding-top: 80px;
+}
+main section .section-right-content {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+}
+main section .left-header {
+    text-align: left;
+}
+main section .section-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.contact-us .contact-content {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 64px;
+    margin-bottom: 60px;
+}
+.icon {
+    font-family: 'Stroke-Gap-Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.contact-us .contact-content i {
+    display: inline-block;
+    border: 2px solid #d3d3d3;
+    position: absolute;
+    left: 0;
+    border-radius: 100%;
+    height: 79px;
+    width: 79px;
+    line-height: 75px;
+    text-align: center;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+.contact-us .contact-content i {
+    color: #BF2424;
+    font-size: 25px;
+}
+.contact-us .contact-content h3 {
+    color: #222;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+}
+.contact-us .contact-content p {
+    color: #777;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.64px;
+}
+.contact-us .form-control {
+    min-height: 40px;
+    border-color: #e4e4e4;
+    border-radius: 5px;
+    box-shadow: none;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    padding: 6px 25px;
+    letter-spacing: 0.48px;
+}
+.contact-us .contact-content p a {
+    color: #777;
+    text-decoration: none;
+}

@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700|Poppins:300,400,600,700');
+@import mixings
+
+$brand-primary: #BF2424
+$brand-secondry: #343434
+$text-primary: #404040
+$default-font-family: 'Lato', sans-serif
+$navigation-font-family: 'Poppins', sans-serif
+$slider-font-family: 'Dancing Script', cursive
+$brand-success: #4F9E4F
+$brand-info:    #5bc0de
+$brand-warning: #f0ad4e
+$brand-danger:  #d9534f
+
+body
+    background-color: #FFF
+    color: $text-primary
+    font-family: $default-font-family
+    padding: 0px
+    margin: 0px
+
+// button:disabled
+//     cursor: not-allowed !important
+//     background: #000
+
+.well-sm
+    padding: 9px;
+    border-radius: 3px
+.well
+    min-height: 20px
+    padding: 19px
+    margin-bottom: 20px
+    background-color: #f5f5f5
+    border: 1px solid #e3e3e3
+    border-radius: 4px
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05)
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05)
+
+label
+    display: inline-block
+    max-width: 100%
+    margin-bottom: 5px
+    font-weight: 700
+
+.form-horizontal .form-group-sm .control-label
+    padding-top: 6px
+    font-size: 12px
+
+#page-loader
+  background-color: $brand-primary
+  width: 100%
+  height: 100vh
+  text-align: center
+  padding-top: 200px
+  
+  div
+    margin-left: auto
+    margin-right: auto
+
+
+header 
+  .top-header
+    margin-bottom: 15px
+
+  .our-contacts
+    padding-top: 45px
+    @media(max-width : 767px)
+        padding-top: 10px
+        padding-bottom: 10px
+        text-align: center
+    
+    p 
+      i 
+        color: #BF2424
+        padding-right: 15px
+
+      a 
+        color: #777
+        text-decoration: none
+        
+      
+      span 
+        font-weight: 700
+        color: #222
+    p
+        @media(max-width: 767px)
+            font-size: 12px   
+            margin-bottom: 0px
+            display: inline-block
+    p
+        &:first-child
+            @media(max-width: 767px)
+                padding-right: 20px
+  
+  .logo-block 
+    text-align: center
+
+    a.navbar-brand 
+      font-size: 18px
+      line-height: 20px
+      float: none
+      display: inline-block
+      height: auto
+      padding-top: 10px
+      @media (max-width: 767px)
+        padding: 0px
+        margin: 0px
+    
+    img
+      max-width: 100%
+      @media (max-width: 767px)
+        max-width: 45%
+
+  .header-order
+      padding-top: 45px
+      text-align: right
+      @media (max-width: 767px)
+          width: 100%
+          text-align: center
+          padding-top: 20px
+
+      a
+          font-family: $navigation-font-family
+          background-color: #BF2424
+          border: 1px solid #BF2424
+          padding: 10px 40px
+          font-size: 12px
+          font-weight: 600
+          text-align: center
+          text-transform: uppercase
+          color: #FFFFFF
+          display: inline-block
+          letter-spacing: 1.8px
+          margin-left: 20px
+          border-radius: 50px
+          @media(max-width: 767px)
+            margin: 0px
+
+          &:hover
+              background-color: transparent
+              border: 1px solid #BF2424
+              color: #BF2424
+
+  nav
+    background: #BF2424
+
+    ul
+        list-style: none
+        padding-left: 0px
+        margin: 0px
+        float: none
+        text-align: center
+        @media (max-width: 991px)
+            display: none !important
+
+        li
+            margin: 0 20px
+            display: inline-block
+            float: none           
+
+            a
+                font-family: $navigation-font-family
+                font-size: 13px
+                font-weight: 600
+                text-decoration: none
+                text-transform: uppercase
+                color: #FFF
+                padding: 15px 10px
+                letter-spacing: 1.8px
+                position: relative
+                display: inline-block
+
+                &:hover
+                    color: #FFF
+                    text-decoration: underline
+
+                &.active
+                    font-weight: bold
+                    text-decoration: underline
+                    color: #FFF
+
+/* FOOTER */
+
+footer
+  background-image: url('https://www.silversandspizza.com/assets/css/temp/images/footer-bg.jpg')
+  
+  &:before
+    background-color: rgba(0, 0, 0, 0.702)
+
+  .section-padding
+    padding-top: 40px
+    padding-bottom: 40px
+
+  .bottom-footer
+    border-top: 1px solid #3f3f3f
+    display: inline-block
+    width: 100%
+    margin-top: 70px
+    position: relative
+    padding: 30px 0
+
+    p
+        color: #ccc
+        display: inline-block
+        font-family: $default-font-family
+        font-size: 14px
+        letter-spacing: 0.56px
+        margin-bottom: 0
+        position: relative
+        z-index: 1
+
+    .terms-policy
+        float: right
+        @media (max-width: 991px)
+            float: none
+        position: relative
+        z-index: 1
+
+        a
+            color: #ccc
+            font-family: $default-font-family
+            font-size: 14px
+            letter-spacing: 0.56px
+            text-transform: capitalize
+            text-decoration: none
+
+
+  .hours-widget
+      ul
+          padding-left: 0
+          margin-bottom: 0
+          margin-top: 20px
+          list-style: none
+
+          li
+              margin-bottom: 10px
+
+              a
+                  color: #ccc
+                  font-family: $default-font-family
+                  font-size: 13px
+                  letter-spacing: 0.72px
+                  text-transform: uppercase
+                  text-decoration: none
+
+              &.active a
+                  color: #ff9c00
+
+
+  .contact-widget 
+      @media (max-width: 767px)
+          padding-top: 20px
+      p
+          position: relative
+          padding-left: 88px
+
+
+  .ftr-widget
+        @media (max-width: 991px)
+            text-align: center
+
+
+        h3
+            color: #fff
+            font-size: 18px
+            font-weight: 600
+            letter-spacing: 0.72px
+            margin-bottom: 10px
+            margin-top: 0
+            text-transform: uppercase
+            text-align: left
+            @media (max-width: 991px)
+                text-align: center
+        p
+            color: #ccc
+            line-height: 26px
+            font-size: 14px
+            font-family: $default-font-family
+            letter-spacing: 0.56px
+            text-align: left
+            @media (max-width: 991px)
+                text-align: center
+
+            span
+                text-transform: uppercase
+                position: absolute
+                left: 0
+
+            a
+                color: #ccc
+            &:hover
+                text-decoration: underline;
+
+        a.navbar-brand
+            width: 100px
+            font-size: 18px
+            line-height: 20px
+            height: auto
+            float: none
+            display: inline-block
+            padding: 0
+            margin-bottom: 30px
+        
+        img
+            max-width: 100%
+            height: auto
+
+  img
+      max-width: 100%
+      height: auto
+
+/* MODAL */
+.overlay
+    opacity: 0
+    position: fixed
+    z-index: 1000
+    transition: opacity 250ms ease-out
+    
+    &.open
+        opacity: 1
+        background: rgba(230, 230, 230, 0.85)
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+
+.mf-modal
+    position: fixed;
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1050
+    display: none
+    overflow: hidden
+    outline: 0
+    overflow-x: hidden
+    overflow-y: auto
+
+
+.mf-modal-dialog 
+    position: relative
+    width: auto
+    max-width: 600px
+    margin: 30px auto
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.4)
+    box-shadow: 0 3px 9px rgba(0,0,0,.4)
+    background-color: #fff
+    border: 1px solid rgba(0,0,0,.4)
+    border-radius: 5px
+    overflow-y: auto
+
+    @media(max-width : 767px)
+        margin: 0px
+        border-width: 0px
+        border-radius: 0px
+        width: 100vw
+        height: 100vh
+
+    .mf-modal-close
+        cursor: pointer
+        position: absolute
+        right: 15px
+        top: 10px
+        z-index: 10001
+        i
+            color: #a5a5a5
+                    
+            
+
+.mf-modal-content
+    position: relative
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-direction: column
+    flex-direction: column
+    background-clip: padding-box
+    outline: 0
+    padding: 15px 25px
+
+
+/* MENU */
+
+
+
+
+
+.menu-panel 
+    margin-bottom: 20px
+
+    .rui-panel-body 
+        background-color: #FFF
+
+        table
+            margin-bottom: 0px
+            tr
+                border-bottom: 1px solid #e2dfdf
+                cursor: pointer
+                td
+                    box-sizing: content-box
+                    border-width: 0px
+                    padding: 8px
+                    line-height: 1.42857143
+                    vertical-align: middle
+                    height: 45px
+                    
+                    &:first-child
+                        padding-left: 12px
+
+                        input[type="text"]
+                            text-align: center
+            
+                    &:last-child
+                        width: 56px
+                        font-weight: bold
+                        text-align: center
+                        vertical-align: middle
+                &:hover
+                    background-color: #ffddad
+                &:last-child
+                    border-bottom-width: 0px
+
+        .btn-menu-plus 
+            cursor: pointer
+            border-width: 0px
+            background-color: $brand-success
+            color: #FFF
+            border-color: darken($brand-success, 7)
+
+            &:hover
+                background-color: darken($brand-success, 5)
+                text-color: #FFF
+
+            i
+                font-size: 12px
+                font-weight: normal
+
+        .menu-add-item-ig
+            padding: 6px 9px
+
+        a.menu-item-link, a.menu-item-link:link, a.menu-item-link:active, a.menu-item-link:visited
+            font-weight: bold
+            font-size: 15px
+            cursor: pointer
+            color: $brand-primary
+
+            &:hover
+                text-decoration: underline;
+                color: $brand-secondry
+
+            @media(max-width : 767px)
+                font-size: 14px
+
+        .menu-item-desc 
+            margin-bottom: 0px
+            font-size: 13px
+            color: #333333
+
+            @media(max-width: 767px)
+                font-size: 12px
+
+        .menu-item-price 
+            color: $brand-primary
+            cursor: default
+
+            @media(max-width: 767px)
+                font-size: 15px
+
+.product-dialog
+    font-size: 14px
+
+    h4
+        font-weight: 600
+        font-size: 18px
+        margin-top: 10px
+        margin-bottom: 10px
+    
+    .input-group
+        width: 93px
+        float: left
+
+    .item-count-btn
+        padding: 5px 8px
+        cursor: pointer
+        border-color: #ccc
+
+    .item-count-input
+        padding: 0px
+        font-size: 15px
+        text-align: center
+  
+    .price-list-options
+        width: 200px
+        float: right
+
+        @media(max-width: 767px)
+            width: 174px
+
+        select
+            @media(max-width: 767px)
+                height: 36px !important
+
+
+    hr
+        margin-top: 0px
+
+    .control-label
+        text-align: left
+        cursor: pointer
+
+    .clb-2
+        font-size: 0.6666rem
+  
+    .clb-3
+        font-weight: normal
+  
+    .propert-checkbox
+        margin-top: 0.3333rem
+  
+    .hr-2
+        margin-bottom: 0.2916rem
+  
+    .hr-3
+        margin-bottom: 0.4166rem
+
+    .btn-cancel
+        cursor: pointer
+        width: 145px
+        background-color: #FFFFFF
+        color: #333333
+        font-size: 14px
+        border: 1px solid darken(#FFF, 10);
+
+        &:hover
+            background-color: darken(#FFF, 10)
+
+
+    .btn-add
+        margin-left: 0.4166rem 
+        width: 145px
+        font-size: 14px
+        cursor: pointer
+        background-color: $brand-success
+        color: #FFF
+        border-color: darken($brand-success, 10)
+
+        &:hover
+            background-color: darken($brand-success, 10)
+
+    .well-price
+        box-sizing: content-box
+        width: 92px
+        float: left
+        height: 19px
+        margin-left: 16px
+        padding: 6px 0px
+        text-align: center
+        font-weight: bold
+
+        @media(max-width: 767px)
+            width: 65px
+
+    .well-outline-warning
+        background-color: transparent
+        border-width: 1px
+        border-color: darken($brand-warning, 10)
+        color: darken($brand-warning, 10)
+
+
+.card-default
+    color: #333
+    background-color: #f5f5f5
+    border-color: #ddd
+.form-control
+    padding: 6px 12px
+    font-size: 14px
+    line-height: 1.4
+    height: auto
+
+.mobile-basket
+    position: fixed
+    bottom: 15px
+    right: 20px
+    height: 60px
+    width: 60px
+    background-color: #fb9b2d
+    border-radius: 50%
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+    cursor: pointer
+    
+    .basket-badge
+        background-color: #000
+        color: #FFF
+        border-radius: 10px
+        width: 20px
+        height: 20px
+        line-height: 20px
+        position: absolute
+        right: 2px
+        top: -4px
+        font-size: 12px
+        text-align: center
+        font-family: sans-serif
+        font-weight: 600
+    i
+        box-sizing: border-box
+        color: #ffffff
+        font-size: 25px
+        top: 17px
+        left: 15px
+        position: absolute
+.user-basket-card
+    +border-radius(2px)
+    margin-bottom: 20px
+
+    @media(max-width: 767px)
+        margin-bottom: 0px
+
+    .card-heading
+        background-color: #FFFFFF
+        padding: 10px
+
+    .card-title
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 15px
+        color: #BF2424
+        margin-bottom: 0px
+  
+    .card-body
+        padding: 0px
+
+    .checkout-panel
+        padding: 10px
+
+    .btn-checkout
+        +border-radius(3px)
+        cursor: pointer
+        background-color: #4F9E4F
+        color: #FFF
+        border-color: #438643
+        font-size: 14px
+
+        &:hover
+            background-color: #438643
+            text-color: #FFF
+
+
+    .item-table
+        font-size: 0.4583rem
+        margin-bottom: 0px
+    
+        tbody
+            border-top: 0px
+
+        th
+            font-size: 12px
+            font-weight: normal
+            background-color: #f7f7f7
+            border-bottom-width: 0px
+            padding: 5px
+
+        th:nth-child(3)
+            width: 15%
+            text-align: center
+
+        th:nth-child(4)
+            width: 15%
+            text-align: right
+    
+        th:last-child
+            width: 5%
+
+        td
+            font-weight: 700
+            padding: 5px
+            padding-top: 15px
+            font-size: 13px
+    
+        tr.item-row
+            td:first-child
+                padding-bottom: 0px
+
+            td:nth-child(3)
+                text-align: center
+                padding-bottom: 0px
+
+            td:nth-child(4)
+                text-align: right
+                padding-bottom: 0px
+
+        td.item-details
+            padding-top: 5px
+            border-top: 0px
+            padding-bottom: 15px
+    
+        .qty-input
+            width: 26px
+            text-align: center
+            padding-bottom: 0px
+            padding-top: 0px
+            line-height: 9px
+
+        .item-table-footer
+            background-color: #f7f7f7
+            border-bottom: 1px solid #e5e5e5
+            font-weight: normal
+            font-size: 13px
+            padding: 10px 6px
+
+        .sub-item
+            font-weight: normal
+            font-size: 10px
+            color: #676767
+
+        .remove-item
+            color: #BF2424
+            cursor: pointer
+            padding-bottom: 0px
+
+
+
+.jump-to
+    @media(max-width: 767px)
+        display: none
+
+.checkout-basket
+    .user-basket-card
+        width: 100%
+        border-top-width: 0px
+        margin-bottom: 0px
+        border-bottom-width: 0px
+
+        table
+            thead, tfoot
+                background-color: #f7f7f7 !important
+            
+                th
+                    padding: 12px 10px 10px 16px !important
+                    border-bottom-width: 0px !important
+                    font-size: 14px
+                    font-weight: bold
+                    text-transform: uppercase
+
+            thead
+                tr
+                    th:nth-child(2), th:nth-child(3), th:nth-child(4)
+                        width: 10% !important
+                    th:nth-child(4)
+                        text-align: right                    
+                    th:last-child
+                        width: 3% !important
+
+            tfoot
+                td
+                    border-top-width: 0px !important
+                    padding: 5px 10px 0px 16px !important
+                    font-size: 13px !important
+            
+                tr:first-child 
+                    td
+                        border-top-width: 1px !important
+                        padding: 12px 10px 0px 16px !important
+
+                tr:last-child 
+                    td
+                        border-top-width: 0px !important
+                        padding: 12px 10px 12px 16px !important
+                        font-size: 16px!important
+
+                tr
+                    border-top: 1px solid #e9ecef
+                    
+                    td:nth-child(3)
+                        text-align: right !important
+
+            tbody
+                tr.item-row
+                    td:first-child
+                        padding-bottom: 0px
+
+                    td:nth-child(3)
+                        text-align: center
+                        padding-bottom: 0px
+
+                    td:nth-child(4)
+                        text-align: right
+                        padding-bottom: 0px
+                        font-size: 16px
+
+                .item-details
+                    padding-top: 0px
+                    border-top: 0px
+
+            td
+                padding: 18px 10px 12px 15px
+                
+            .sub-item
+                font-size: 12px
+                color: #676767
+
+            .sub-item-container
+                display: block
+
+            .qty-input
+                width: 27px
+                text-align: center
+
+            .item-name
+                color: #343434
+                font-size: 16px
+                font-weight: normal
+
+            .remove-item 
+                color: #333
+                cursor: pointer !important
+
+        .card-heading
+            display: none
+        .checkout-panel
+            display: none
+
+p.checkout-type-text
+    text-align: center  !important
+    font-size: 17px  !important
+    font-weight: bold  !important
+    padding-bottom: 0px !important
+
+.btn-checkout-type
+    cursor: pointer
+    background-color: #FFF
+    color: #333333
+    border-color: #CCCCCC
+
+    &:hover
+        background-color: #e6e6e6
+
+.btn-checkout-type-selected
+    cursor: pointer
+    background-color: #f0ad4e
+    color: #FFF
+    border-color: #df8a13
+
+    &:hover
+        background-color: #eea236
+
+// .checkout-container
+//     padding-bottom: 2rem !important
+  
+// .checkout-selected-row
+//     background-color: $checkout-selected-row-background-color !important
+
+.address-panel, .time-panel, .note-panel, .credit-card, .tip-card
+    +border-radius(0px)
+    margin-top: 20px
+    margin-bottom: 20px
+
+    .card-header
+        font-size: 16px
+        font-weight: bold
+        border-bottom: 1px solid #e9ecef
+
+    .card-body
+        padding: 0px
+        > div.selected
+            background-color: #fdeace
+        > div
+            cursor: pointer
+            border-bottom: 1px solid #e5e5e5
+            padding:  15px
+            display: flex
+            justify-content: space-between
+            font-size : 12px
+            
+            &:last-child
+                border-bottom-width: 0px
+        .date-container
+            width: 100%
+            padding-top: 10px            
+            .react-datepicker__navigation--next--with-time
+                right: 103px
+            .react-datepicker-wrapper
+                width: 100%
+            
+                .react-datepicker__input-container
+                    width: 100%
+            .react-datepicker__time-container 
+                width: 95px
+            
+                .react-datepicker__time-box
+                    width: 100%
+
+            .react-datepicker__time-list
+                padding: 0px !important
+        .radio
+            width: 100%
+            input[type="radio"]
+                margin-right: 10px
+            span
+                font-size: 15px
+    .non-address-bar
+        text-align: center
+
+.credit-card, .tip-card
+    .card-body
+        padding: 15px
+        min-height: 266px
+
+        label
+            font-size: 14px
+            line-height: 25px
+
+        > div
+            border-width: 0px
+            padding: 0px
+
+        button
+            cursor: pointer
+            border: 1px solid #dcdcdc
+            font-size: 13px
+            &:focus 
+                outline: none !important
+                box-shadow: none
+.checkout-coupon
+    background-color: #ffffff
+    padding: 15px
+    border: 1px solid #e5e5e5
+    border-width: 0px 1px 1px 1px
+    margin-bottom: 20px
+
+    .checkout-coupon-flex
+        display: flex
+
+        > label
+            margin-right: 10px
+            font-size: 14px
+            padding-top: 7px
+        
+        > div
+            width: 200px
+
+            button
+                cursor: pointer
+
+                &:focus
+                    outline:  none !important
+                    box-shadow: none
+
+    > span
+        color: red
+        padding: 7px 0px 0px 0px
+        display: block
+// .time-panel
+//   +border-radius(0px)
+//   margin-top: 0.8333rem
+
+//   .panel-heading
+//     font-size: 0.666rem
+//     font-weight: bold
+
+//   .panel-body
+//     min-height: 6.66rem
+//     padding: 0px
+
+//     &>div:first-child
+//       height: 100%
+//       padding: 15px
+    
+//     &>div:last-child
+//       height: 100%
+//       padding: 15px 
+//       min-height: 90px
+
+//     .future-order-text
+//       font-size: 0.4583rem

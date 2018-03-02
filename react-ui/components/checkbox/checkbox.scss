@@ -1,0 +1,112 @@
+@import '../../style/variables.scss';
+@import '../../style/functions.scss';
+
+.rui-checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 13px;
+    height: 15px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rui-checkbox-container.small {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.rui-checkbox-container input {
+    position: absolute;
+    opacity: 0;
+}
+  
+.rui-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.rui-checkbox-container.small .rui-checkmark {
+    height: 15px;
+    width: 15px;
+}
+  
+.rui-checkbox-container:hover input ~ .rui-checkmark {
+    background-color: rgb(233, 233, 233);
+}
+  
+.rui-checkbox-container input:checked ~ .rui-checkmark {
+    background-color: #2196F3;
+}
+  
+.rui-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.rui-checkbox-container input:checked ~ .rui-checkmark:after {
+    display: block;
+}
+  
+.rui-checkbox-container .rui-checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.rui-checkbox-container.small .rui-checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 8px;
+    border-width: 0 2px 2px 0;
+}
+
+@each $theme in map-keys($themes) {
+    .#{$theme}-rui-checkbox-primary .rui-checkmark {
+        border-color: primary-color($theme);
+    }
+
+    .#{$theme}-rui-checkbox-primary.rui-checkbox-container input:checked ~ .rui-checkmark {
+        background-color: primary-color($theme);
+    }
+
+    .#{$theme}-rui-checkbox-success .rui-checkmark {
+        border-color: success-color($theme);
+    }
+
+    .#{$theme}-rui-checkbox-success.rui-checkbox-container input:checked ~ .rui-checkmark {
+        background-color: success-color($theme);
+    }
+
+    .#{$theme}-rui-checkbox-default .rui-checkmark {
+        border-color: default-color-invert($theme);
+    }
+
+    .#{$theme}-rui-checkbox-default.rui-checkbox-container input:checked ~ .rui-checkmark {
+        background-color: default-color($theme);
+    }
+
+    .#{$theme}-rui-checkbox-default.rui-checkbox-container .rui-checkmark:after{
+        border-color: default-color-invert($theme);
+    }
+}

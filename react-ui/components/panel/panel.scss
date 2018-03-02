@@ -1,0 +1,73 @@
+@import '../../style/variables.scss';
+@import '../../style/functions.scss';
+
+.rui-panel{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-width: 1px;
+    border-style: solid;    
+    border-radius: 3px;
+}
+.rui-panel-header {
+    padding: 8px 12px;
+    position: relative;
+}
+
+.rui-panel .rui-panel-header .rui-collapse-icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    transition: .2s transform;
+}
+.rui-panel.open .rui-panel-header .rui-collapse-icon {
+    transform: rotate(90deg);
+}
+
+.rui-panel-body {
+    transition: height 0.2s ease-out;
+    height: 0px;
+    overflow: hidden;
+}
+
+
+.rui-panel-body-content {
+    padding: 8px 12px;
+}
+
+.collapsed .rui-panel-body{
+    display: none;
+}
+
+@each $theme in map-keys($themes) {
+    .#{$theme}-rui-panel-default {
+        border-color: border-color($theme);
+    }
+    .#{$theme}-rui-panel-primary {
+        border-color: border-color($theme);
+    }
+    .#{$theme}-rui-panel-success {
+        border-color: border-color($theme);
+    }
+
+    .#{$theme}-rui-panel-header-default {
+        background-color: default-color($theme);
+        color: default-color-invert($theme);
+    }
+
+    .#{$theme}-rui-panel-header-primary {
+        background-color: primary-color($theme);
+        color: primary-color-invert($theme);
+    }
+
+    .#{$theme}-rui-panel-header-success {
+        background-color: success-color($theme);
+        color: success-color-invert($theme);
+    }
+}
