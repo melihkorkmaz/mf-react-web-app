@@ -1,3 +1,3 @@
 # Menufield Web App
 
-This project if for menufield web application.
+This project is a react web application for menufield.
